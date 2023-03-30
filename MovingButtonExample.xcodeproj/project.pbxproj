@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B89D86929D43549002266A7 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B89D86829D43549002266A7 /* TimeManager.swift */; };
+		3B89D86B29D43574002266A7 /* CustomMovingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B89D86A29D43574002266A7 /* CustomMovingButton.swift */; };
+		3B89D86D29D43CF5002266A7 /* MovingButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B89D86C29D43CF5002266A7 /* MovingButtonViewController.swift */; };
+		3B89D86F29D4432D002266A7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B89D86E29D4432D002266A7 /* ResultViewController.swift */; };
+		3B8B843D29D425010070DA2B /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B843C29D425010070DA2B /* ScoreTableViewCell.swift */; };
+		3BBE0FC629D4AA3B009A0F9A /* Vibur-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BBE0FC529D4AA3B009A0F9A /* Vibur-Regular.ttf */; };
 		3BD0369129D2DB6B0072BCB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD0369029D2DB6B0072BCB8 /* AppDelegate.swift */; };
 		3BD0369329D2DB6B0072BCB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD0369229D2DB6B0072BCB8 /* SceneDelegate.swift */; };
-		3BD0369529D2DB6B0072BCB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD0369429D2DB6B0072BCB8 /* ViewController.swift */; };
+		3BD0369529D2DB6B0072BCB8 /* ScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD0369429D2DB6B0072BCB8 /* ScoreboardViewController.swift */; };
 		3BD0369829D2DB6B0072BCB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD0369629D2DB6B0072BCB8 /* Main.storyboard */; };
 		3BD0369A29D2DB6C0072BCB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD0369929D2DB6C0072BCB8 /* Assets.xcassets */; };
 		3BD0369D29D2DB6C0072BCB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD0369B29D2DB6C0072BCB8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B89D86829D43549002266A7 /* TimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		3B89D86A29D43574002266A7 /* CustomMovingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMovingButton.swift; sourceTree = "<group>"; };
+		3B89D86C29D43CF5002266A7 /* MovingButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingButtonViewController.swift; sourceTree = "<group>"; };
+		3B89D86E29D4432D002266A7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		3B8B843C29D425010070DA2B /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		3BBE0FC529D4AA3B009A0F9A /* Vibur-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vibur-Regular.ttf"; sourceTree = "<group>"; };
 		3BD0368D29D2DB6B0072BCB8 /* MovingButtonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovingButtonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD0369029D2DB6B0072BCB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BD0369229D2DB6B0072BCB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3BD0369429D2DB6B0072BCB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BD0369429D2DB6B0072BCB8 /* ScoreboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardViewController.swift; sourceTree = "<group>"; };
 		3BD0369729D2DB6B0072BCB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BD0369929D2DB6C0072BCB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BD0369C29D2DB6C0072BCB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BBE0FC729D56BD0009A0F9A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3BD0369429D2DB6B0072BCB8 /* ScoreboardViewController.swift */,
+				3B89D86C29D43CF5002266A7 /* MovingButtonViewController.swift */,
+				3B89D86E29D4432D002266A7 /* ResultViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		3BD0368429D2DB6B0072BCB8 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +80,15 @@
 			children = (
 				3BD0369029D2DB6B0072BCB8 /* AppDelegate.swift */,
 				3BD0369229D2DB6B0072BCB8 /* SceneDelegate.swift */,
-				3BD0369429D2DB6B0072BCB8 /* ViewController.swift */,
+				3BBE0FC729D56BD0009A0F9A /* ViewControllers */,
+				3B8B843C29D425010070DA2B /* ScoreTableViewCell.swift */,
+				3B89D86829D43549002266A7 /* TimeManager.swift */,
+				3B89D86A29D43574002266A7 /* CustomMovingButton.swift */,
 				3BD0369629D2DB6B0072BCB8 /* Main.storyboard */,
 				3BD0369929D2DB6C0072BCB8 /* Assets.xcassets */,
 				3BD0369B29D2DB6C0072BCB8 /* LaunchScreen.storyboard */,
 				3BD0369E29D2DB6C0072BCB8 /* Info.plist */,
+				3BBE0FC529D4AA3B009A0F9A /* Vibur-Regular.ttf */,
 			);
 			path = MovingButtonExample;
 			sourceTree = "<group>";
@@ -125,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BBE0FC629D4AA3B009A0F9A /* Vibur-Regular.ttf in Resources */,
 				3BD0369D29D2DB6C0072BCB8 /* LaunchScreen.storyboard in Resources */,
 				3BD0369A29D2DB6C0072BCB8 /* Assets.xcassets in Resources */,
 				3BD0369829D2DB6B0072BCB8 /* Main.storyboard in Resources */,
@@ -138,7 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BD0369529D2DB6B0072BCB8 /* ViewController.swift in Sources */,
+				3B8B843D29D425010070DA2B /* ScoreTableViewCell.swift in Sources */,
+				3BD0369529D2DB6B0072BCB8 /* ScoreboardViewController.swift in Sources */,
+				3B89D86F29D4432D002266A7 /* ResultViewController.swift in Sources */,
+				3B89D86B29D43574002266A7 /* CustomMovingButton.swift in Sources */,
+				3B89D86929D43549002266A7 /* TimeManager.swift in Sources */,
+				3B89D86D29D43CF5002266A7 /* MovingButtonViewController.swift in Sources */,
 				3BD0369129D2DB6B0072BCB8 /* AppDelegate.swift in Sources */,
 				3BD0369329D2DB6B0072BCB8 /* SceneDelegate.swift in Sources */,
 			);
