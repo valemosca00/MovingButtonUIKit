@@ -31,11 +31,10 @@ Add the `TimeManager.swift` file to your project and use it as follows:
  
 ## Credits
 
-Image by <a href="https://www.freepik.com/free-vector/flat-good-job-great-job-stickers-pack_13587987.htm#query=great&position=42&from_view=search&track=sph">Freepik</a>
+[Gold Medal Image](https://www.freepik.com/free-icon/gold-medal_14796183.htm?query=medal%20first#from_view=detail_alsolike).
+[Silver Medal Image](https://www.freepik.com/free-icon/silver-medal_14796185.htm?query=medal%20first#from_view=detail_alsolike).
+[Bronze Medal Image](https://www.freepik.com/free-icon/bronze-medal_14796188.htm#query=medal%20icon&position=34&from_view=search&track=ais).
 
-https://www.freepik.com/free-vector/flat-good-job-great-job-stickers-pack_13587987.htm#query=great&position=42&from_view=search&track=sph
+[NicelyDone Image](https://www.freepik.com/free-vector/flat-good-job-great-job-stickers-pack_13587987.htm#query=great&position=42&from_view=search&track=sph).
 
-<a href="https://www.flaticon.com/free-icons/prize" title="prize icons">Prize icons created by Freepik - Flaticon</a>
-
-Font: Vibur
-Author: Johan Kallas
+Font: Vibur - Author: Johan Kallas
