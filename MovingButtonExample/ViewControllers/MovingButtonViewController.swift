@@ -29,8 +29,8 @@ class MovingButtonViewController: UIViewController {
         view.addSubview(buttonMove)
         buttonMove.action = navigate
         
-        timeManager!.startTimer()
-        timerLabel.text = timeString
+//        timeManager!.startTimer()
+//        timerLabel.text = timeString
     }
     
     func navigate(){
@@ -44,6 +44,15 @@ class MovingButtonViewController: UIViewController {
         count = 0
         timerCounting = false
         timerLabel.text = timeManager?.makeTimeString(hours: 0, minutes: 0, seconds: 0)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        timeManager!.startTimer()
+        timerLabel.text = timeString
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        resetTimer()
     }
     /*
     // MARK: - Navigation
