@@ -11,7 +11,7 @@ class MovingButtonViewController: UIViewController {
 
     @IBOutlet weak var timerLabel: UILabel!
     
-    let buttonMove = CustomMovingButton(title: "",maxMovements: 10)
+    let buttonMove = CustomMovingButton(title: "",maxMovements: 2)
 
 
     var timeManager: TimeManager?

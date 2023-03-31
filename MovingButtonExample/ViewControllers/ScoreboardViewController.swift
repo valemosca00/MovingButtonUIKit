@@ -11,8 +11,9 @@ let userDefaults = UserDefaults.standard
 
 // Recupera l'array dinamico dalle UserDefaults utilizzando la chiave
 var performances = userDefaults.array(forKey: "scores") as? [String] ?? []
-let uniqueArray = Array(Set(performances))
-let sortedArray = uniqueArray.sorted { $0 < $1 }
+var uniqueArray = Array(Set(performances))
+var sortedArray = uniqueArray.sorted { $0 < $1 }
+
 let customFont = UIFont(name: "Vibur", size: 25.0)
 //var performances: [String] = []
 
@@ -20,9 +21,19 @@ class ScoreboardViewController: UIViewController, UITableViewDataSource, UITable
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func emptyButton(_ sender: Any) {
+        userDefaults.removeObject(forKey: "scores")
+        userDefaults.synchronize()
+        uniqueArray = []
+        sortedArray = []
+        tableView.reloadData()
+        print("\(performances.count) \(uniqueArray.count) \(sortedArray.count)")
+    }
+    
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         // Do any additional setup after loading the view.
-        let label = UILabel(frame: CGRect(x: 30, y: self.view.center.y + 30, width: 340, height: 50))
         label.font = customFont
         label.textAlignment = .center
         label.text = "Thanks for downloading the App!❤️"
@@ -38,6 +49,7 @@ class ScoreboardViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("I'm calling func tableView")
         let cell = tableView.dequeueReusableCell(withIdentifier: "ScoreCell", for: indexPath) as! ScoreTableViewCell
         
         if sortedArray.count > indexPath.row {
@@ -45,15 +57,14 @@ class ScoreboardViewController: UIViewController, UITableViewDataSource, UITable
         }
         cell.loadTableView(with: "", index: indexPath.row)
         // Configure the cell...
-
+        
         return cell
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
         //this method force the view to reload
         tableView.reloadData()
+        super.viewWillAppear(animated)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

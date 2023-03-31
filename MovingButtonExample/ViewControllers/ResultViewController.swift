@@ -42,12 +42,12 @@ class ResultViewController:
         
     }
     
-    func emptyArray(){
-        // Empty the array saved inside UserDefaults
-        userDefaults.removeObject(forKey: "scores")
-        
-        userDefaults.synchronize()
-    }
+//    func emptyArray(){
+//        // Empty the array saved inside UserDefaults
+//        userDefaults.removeObject(forKey: "scores")
+//        
+//        userDefaults.synchronize()
+//    }
     
     func savePerformance(){
         //save the performance and reset the time
@@ -57,6 +57,9 @@ class ResultViewController:
         userDefaults.set(performances, forKey: "scores")
         
         userDefaults.synchronize()
+        
+        uniqueArray = Array(Set(performances))
+        sortedArray = uniqueArray.sorted { $0 < $1 }
     }
     
 }
